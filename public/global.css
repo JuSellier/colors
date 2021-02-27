@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Overpass+Mono:wght@300;400;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* FONTS */
+html {
+  --font: "Overpass Mono", monospace;
+  --font-x: "Courier Prime", monospace;
+}
+* {
+  font-family: var(--font);
+}
+
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-x);
+}
+
+/* COLORS */
+html {
+  --clr-white: #e0e0e0;
+  --clr-black: #1f2020;
+}
+
+body {
+  background: #000;
+}
+
+*,
+*::before,
+*::after {
+  color: var(--clr-white);
+}
+
+/* SIZE */
+html {
+  --size-sides-s: 20px;
+  --size-sides-l: 100px;
+
+  --size-sides: var(--size-sides-s);
+}
+@media (min-width: 1200px) {
+  html {
+    --size-sides: var(--size-sides-l);
+  }
+}
+
+/* UTILITY */
