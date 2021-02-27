@@ -9,4 +9,7 @@ class Palette {
   }
 }
 
-export const testPaletteList = [new Palette("Test", testPaletteColors)];
+export const testPaletteList = [
+  new Palette("Test", testPaletteColors),
+  new Palette("Test2", testPaletteColors),
+];

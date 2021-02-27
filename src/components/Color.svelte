@@ -15,9 +15,22 @@
 </script>
 
 <style>
-  span.top {
+  section.top {
     display: inline-flex;
+    padding: 10px;
+
+    justify-content: flex-end;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  span.color-text {
+    padding: 10px;
+    background: var(--clr-bg);
   }
 </style>
 
-<span bind:this={colorEl} class="top">{name}</span>
+<section bind:this={colorEl} class="top">
+  <button>Copy HEX</button>
+  <span class="color-text"> {name} </span>
+</section>

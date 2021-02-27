@@ -6,7 +6,7 @@
 
 <style>
 	main {
-		padding: 2rem var(--size-sides);
+		padding: 20px var(--size-sides);
 		display: flex;
 		flex-direction: column;
 		row-gap: 2rem;

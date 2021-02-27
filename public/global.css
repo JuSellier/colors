@@ -31,10 +31,13 @@ h6 {
 html {
   --clr-white: #e0e0e0;
   --clr-black: #1f2020;
+
+  --clr-bg: #000;
+  --clr-txt: var(--clr-white);
 }
 
 body {
-  background: #000;
+  background: var(--clr-bg);
 }
 
 *,
@@ -54,6 +57,39 @@ html {
   html {
     --size-sides: var(--size-sides-l);
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0.5em;
+}
+
+/* DEFAULTS */
+button {
+  background: none;
+  border: none;
+  font-size: inherit;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  padding: 10px 20px;
+
+  box-shadow: inset 0 0 0 1px var(--clr-txt);
+  transition: box-shadow 0.1s linear;
+
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: inset 0 0 0 5px var(--clr-txt);
 }
 
 /* UTILITY */

@@ -10,9 +10,9 @@
 <style>
   div {
     display: flex;
+    flex-direction: column;
     row-gap: 10px;
     column-gap: 10px;
-    flex-wrap: wrap;
   }
 </style>
 
