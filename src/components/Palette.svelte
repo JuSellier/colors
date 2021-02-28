@@ -19,6 +19,8 @@
 
   h2 {
     position: relative;
+    font-weight: 400;
+    font-family: var(--font);
   }
 
   span {

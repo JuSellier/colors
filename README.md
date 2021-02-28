@@ -4,6 +4,9 @@ Just some color combinations that I like.
 
 ## Desired Features
 
-- [ ] Show color palettes collections
-- [ ] Copy hexadecimal color code from color
-- [ ] Copy colors from palette to set up CSS variables
+- [x] Show color palettes collections
+- [x] Copy hexadecimal color code from color
+- [ ] RGB compatibility
+- [ ] HSL compatibility
+- [ ] Color mode preference (user can choose between HEX / HSL / RGB)
+- [ ] Add gradients to palettes

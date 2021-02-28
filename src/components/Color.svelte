@@ -9,6 +9,7 @@
   let colorEl;
 
   onMount(() => {
+    hex = hex.toUpperCase();
     colorEl.style.background = hex;
   });
 
