@@ -1,5 +1,3 @@
-import { testPaletteColors } from "./colors";
-
 class Palette {
   constructor(name, colors, description, tags) {
     this.name = name;
@@ -37,5 +35,11 @@ export const testPaletteList = [
     { hex: "#CF5797" },
     { hex: "#FF8364" },
     { hex: "#FFB677" },
+  ]),
+  new Palette("Purple Gold", [{ hex: "#572e6c" }, { hex: "#fdf862" }]),
+  new Palette("Authentic Green", [
+    { hex: "#24695c" },
+    { hex: "#c18e60" },
+    { hex: "#e1c5c1" },
   ]),
 ];
