@@ -8,6 +8,25 @@
 </script>
 
 <style>
+  section {
+    padding: 10px;
+    box-shadow: 0 0 0 1px #80808080;
+
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1rem; */
+  }
+
+  h2 {
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -17,8 +36,16 @@
 </style>
 
 <section>
-  <h2>{name}</h2>
+  <h2>
+    {name}
+    <span>
+      {#each colors as color}
+        <Color {...color} miniMode />
+      {/each}
+    </span>
+  </h2>
   <p>{description}</p>
+
   <div>
     {#each colors as color}
       <Color {...color} />

@@ -31,6 +31,7 @@ h6 {
 html {
   --clr-white: #e0e0e0;
   --clr-black: #1f2020;
+  --clr-1: #b3d300;
 
   --clr-bg: #000;
   --clr-txt: var(--clr-white);
@@ -83,13 +84,19 @@ button {
 
   padding: 10px 20px;
 
-  box-shadow: inset 0 0 0 1px var(--clr-txt);
-  transition: box-shadow 0.1s linear;
+  box-shadow: 0 0 0 1px var(--clr-txt);
+  transition: transform 0.1s linear;
 
   cursor: pointer;
 }
 button:hover {
-  box-shadow: inset 0 0 0 5px var(--clr-txt);
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(1);
+}
+button:focus {
+  outline-color: var(--clr-1);
 }
 
 /* UTILITY */

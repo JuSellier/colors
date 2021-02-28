@@ -7,9 +7,6 @@
 
 <style>
   section.top {
-    padding: 20px 0 0;
-    border-top: 1px solid var(--clr-txt);
-    min-height: 90vh;
   }
 
   div {

@@ -3,6 +3,8 @@
 
   export let name;
   export let hex;
+  export let miniMode = false;
+
   let colorEl;
 
   onMount(() => {
@@ -23,14 +25,11 @@
     column-gap: 10px;
     row-gap: 10px;
   }
-
-  span.color-text {
-    padding: 10px;
+  button {
     background: var(--clr-bg);
   }
 </style>
 
 <section bind:this={colorEl} class="top">
-  <button>Copy HEX</button>
-  <span class="color-text"> {name} </span>
+  {#if !miniMode}<button>{hex}</button>{/if}
 </section>
