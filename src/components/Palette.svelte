@@ -44,7 +44,9 @@
       {/each}
     </span>
   </h2>
-  <p>{description}</p>
+  {#if description}
+    <p>{description}</p>
+  {/if}
 
   <div>
     {#each colors as color}

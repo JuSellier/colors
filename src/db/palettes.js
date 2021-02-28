@@ -4,7 +4,7 @@ class Palette {
   constructor(name, colors, description, tags) {
     this.name = name;
     this.colors = colors;
-    this.description = description || "Description";
+    this.description = description;
     this.tags = tags || "handpicked";
   }
 }
