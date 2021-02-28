@@ -1,7 +1,8 @@
 <script>
   import { onMount } from "svelte";
+  import { updateClipboard } from "../utils/common";
+  import Alert from "./Alert.svelte";
 
-  export let name;
   export let hex;
   export let miniMode = false;
 
@@ -13,6 +14,26 @@
 
   function onClick() {
     // copy color hex code to clipboard
+    updateClipboard(
+      hex,
+      () => {
+        new Alert({
+          target: document.body,
+          props: {
+            color: hex,
+          },
+        });
+      },
+      () => {
+        new Alert({
+          target: document.body,
+          props: {
+            error: true,
+            color: hex,
+          },
+        });
+      }
+    );
   }
 </script>
 
@@ -31,5 +52,5 @@
 </style>
 
 <section bind:this={colorEl} class="top">
-  {#if !miniMode}<button>{hex}</button>{/if}
+  {#if !miniMode}<button on:click={onClick}>{hex}</button>{/if}
 </section>
