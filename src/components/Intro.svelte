@@ -9,7 +9,7 @@
   }
 </style>
 
-<section class="brutal-box">
+<section class="top">
   <h1>Colors.</h1>
   <p>A collection of color palettes</p>
 </section>

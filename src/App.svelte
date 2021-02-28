@@ -1,4 +1,5 @@
 <script>
+	import Footer from "./components/Footer.svelte";
 	import Intro from "./components/Intro.svelte";
 	import PaletteList from "./components/PaletteList.svelte";
 	import { testPaletteList } from "./db/palettes";
@@ -17,3 +18,4 @@
 	<Intro />
 	<PaletteList palettes={testPaletteList} />
 </main>
+<Footer />
