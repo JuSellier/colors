@@ -1,6 +1,6 @@
 <style>
   section {
-    padding: 15px;
+    padding: 0 20px;
     box-shadow: inset 0 0 0 1px var(--clr-white);
   }
 
@@ -13,11 +13,12 @@
   p {
     margin-bottom: 0;
     margin-left: auto;
+    padding-left: 5px;
     max-width: max-content;
   }
 </style>
 
 <section class="top">
   <h1>Colors.</h1>
-  <p>A minimal collection of color palettes...</p>
+  <p>A simple collection of color palettes...</p>
 </section>
