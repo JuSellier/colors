@@ -10,9 +10,11 @@
   }
 
   div {
+    --spacing: calc(1rem + 10vh);
+    padding: var(--spacing) 0;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: var(--spacing);
   }
 </style>
 

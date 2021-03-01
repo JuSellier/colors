@@ -14,6 +14,7 @@
     margin-bottom: 0;
     margin-left: auto;
     padding-left: 5px;
+    margin-right: -10px;
     max-width: max-content;
   }
 </style>
