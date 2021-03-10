@@ -11,7 +11,7 @@
     font-family: var(--font);
   }
   p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     margin-left: auto;
     padding-left: 5px;
     margin-right: -10px;
