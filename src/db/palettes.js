@@ -42,4 +42,11 @@ export const testPaletteList = [
     { hex: "#c18e60" },
     { hex: "#e1c5c1" },
   ]),
+  new Palette("Colorful Bunch", [
+    { hex: "#17D778" },
+    { hex: "#FF3263" },
+    { hex: "#59DADB" },
+    { hex: "#F79E1B" },
+    { hex: "#8B5EC7" },
+  ]),
 ];
